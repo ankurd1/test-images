@@ -12,4 +12,6 @@ jobs:
       - name: Install python dependencies
         run: |
           /bin/bash -c "$(curl -fsSL https://docs.runx.dev/install.sh)"
+          echo $GITHUB_PATH
+          ls ~/.opta
           opta version
